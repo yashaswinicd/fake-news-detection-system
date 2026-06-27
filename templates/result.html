@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - Fake News Detector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-brand">🔍 Fake News Detector</span>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <!-- Result Card -->
+                <div class="card shadow-lg border-{{ color }}">
+                    <div class="card-header bg-{{ color }} text-white text-center">
+                        <h2>{{ emoji }} {{ result }}</h2>
+                        <h4>Confidence: {{ confidence }}</h4>
+                    </div>
+                    <div class="card-body p-4">
+
+                        <!-- News Text -->
+                        <div class="mb-4">
+                            <h5 class="fw-bold">📰 Analyzed News:</h5>
+                            <div class="p-3 bg-light rounded">
+                                <p class="mb-0">{{ news_text[:300] }}...</p>
+                            </div>
+                        </div>
+
+                        <!-- Explanation -->
+                        <div class="alert alert-{{ color }}">
+                            {% if result == 'FAKE NEWS' %}
+                            🚨 This article shows patterns commonly 
+                            found in fake news content. Be careful 
+                            before sharing!
+                            {% else %}
+                            ✅ This article shows patterns commonly 
+                            found in real news content. Looks credible!
+                            {% endif %}
+                        </div>
+
+                        <!-- Back Button -->
+                        <div class="d-grid mt-3">
+                            <a href="/" class="btn btn-dark btn-lg">
+                                🔍 Analyze Another News
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-center text-muted">
+                    <small>Built by Yashaswini C D | 
+                    Logistic Regression + TF-IDF | 
+                    98.61% Accuracy</small>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
