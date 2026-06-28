@@ -41,7 +41,7 @@ A Machine Learning web app that detects whether a news article is **Real or Fake
 
 ## 🏗️ Architecture
 
-![Architecture](screenshots/architecture.svg)
+![Architecture](screenshots/architecture.svg.jpeg)
 
 ## 📸 Screenshots
 
