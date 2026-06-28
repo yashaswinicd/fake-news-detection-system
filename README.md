@@ -26,6 +26,21 @@
 
 
 
+
+![Last Commit](https://img.shields.io/github/last-commit/yashaswinicd/fake-news-detection-system)
+
+
+
+
+![License](https://img.shields.io/github/license/yashaswinicd/fake-news-detection-system)
+
+
+
+
+![Stars](https://img.shields.io/github/stars/yashaswinicd/fake-news-detection-system)
+
+
+
 ## 🌐 Live Demo
 👉 **[Click here to try the app](https://fake-news-detection-system-21yi.onrender.com)**
 
@@ -41,7 +56,10 @@ A Machine Learning web app that detects whether a news article is **Real or Fake
 
 ## 🏗️ Architecture
 
+
 ![Architecture](screenshots/architecture.png)
+
+
 
 ## 📸 Screenshots
 
@@ -68,6 +86,8 @@ A Machine Learning web app that detects whether a news article is **Real or Fake
 
 
 ![ROC Curve](screenshots/roc_curve.png)
+
+
 
 ## 🛠️ Tech Stack
 - Python | Scikit-learn | NLTK
