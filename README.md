@@ -57,12 +57,26 @@
 ## 📌 Project Overview
 A Machine Learning web app that detects whether a news article is **Real or Fake** using NLP and Logistic Regression.
 
+## ⚙️ How It Works
+1. 📝 User pastes a news article into the web app
+2. 🧹 Text is cleaned — lowercase, remove special characters
+3. 🔤 NLTK removes stopwords and applies stemming
+4. 📐 TF-IDF Vectorizer converts text to numbers
+5. 🧠 Logistic Regression model predicts Real or Fake
+6. 📊 Confidence score is displayed to the user
+
 ## ✨ Features
 - ✅ 98.61% Accuracy
 - ✅ AUC Score: 0.9981
 - ✅ Real-time prediction
 - ✅ Confidence score display
 - ✅ Beautiful web UI
+
+## 💻 System Requirements
+- Python 3.8+
+- RAM: 4GB minimum
+- OS: Windows / Linux / macOS
+- Browser: Chrome / Firefox / Edge
 
 ## 🏗️ Architecture
 
@@ -129,6 +143,12 @@ python app.py
 | Recall | 98.6% |
 | F1 Score | 98.6% |
 | ROC AUC | 0.9981 |
+
+## ⚠️ Known Limitations
+- Works only on English news articles
+- Performance depends on training dataset
+- May not detect highly sophisticated fake news
+- Free hosting may have 50 second cold start delay
 
 ## 📁 Project Structure
 
