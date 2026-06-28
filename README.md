@@ -39,6 +39,10 @@ A Machine Learning web app that detects whether a news article is **Real or Fake
 - ✅ Confidence score display
 - ✅ Beautiful web UI
 
+## 🏗️ Architecture
+
+![Architecture](screenshots/architecture.svg)
+
 ## 📸 Screenshots
 
 ### Home Page
