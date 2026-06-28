@@ -47,8 +47,9 @@
 ## 🎬 Demo
 
 
-
 ![Demo](screenshots/demo.gif)
+
+
 
 ## 📌 Project Overview
 A Machine Learning web app that detects whether a news article is **Real or Fake** using NLP and Logistic Regression.
@@ -114,3 +115,46 @@ cd fake-news-detection-system
 pip install -r requirements.txt
 python train.py
 python app.py
+```
+
+## 📊 Model Results
+
+| Metric | Value |
+|--------|-------|
+| Accuracy | 98.61% |
+| Precision | 98.7% |
+| Recall | 98.6% |
+| F1 Score | 98.6% |
+| ROC AUC | 0.9981 |
+
+## 📁 Project Structure
+
+```
+fake-news-detection-system/
+├── data/
+│   └── raw/
+├── models/
+│   ├── fake_news_model.pkl
+│   └── vectorizer.pkl
+├── notebooks/
+├── screenshots/
+├── static/
+├── templates/
+├── tests/
+├── utils/
+├── app.py
+├── train.py
+├── predict.py
+└── requirements.txt
+```
+
+## 🔮 Future Improvements
+- 🤖 BERT/RoBERTa model for better accuracy
+- 🌐 Multilingual support (Hindi, Kannada)
+- 🔍 Explainable AI using SHAP/LIME
+- 🚀 REST API for mobile apps
+- 🐳 Docker deployment
+- 📱 Mobile app integration
+
+## 👩‍💻 Built By
+**Yashaswini C D** | CSE Student | Aspiring AI/ML Engineer
