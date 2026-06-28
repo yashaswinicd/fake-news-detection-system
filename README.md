@@ -39,6 +39,32 @@ A Machine Learning web app that detects whether a news article is **Real or Fake
 - ✅ Confidence score display
 - ✅ Beautiful web UI
 
+## 📸 Screenshots
+
+### Home Page
+
+
+![Home](screenshots/home.png)
+
+
+
+### Prediction Result
+
+
+![Result](screenshots/result.png)
+
+
+
+### Model Performance
+
+
+![Confusion Matrix](screenshots/confusion_matrix.png)
+
+
+
+
+![ROC Curve](screenshots/roc_curve.png)
+
 ## 🛠️ Tech Stack
 - Python | Scikit-learn | NLTK
 - TF-IDF Vectorization
