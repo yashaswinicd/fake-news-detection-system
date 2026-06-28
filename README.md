@@ -21,15 +21,23 @@
 
 
 
+
+![Live](https://img.shields.io/badge/Live-Demo-red)
+
+
+
+## 🌐 Live Demo
+👉 **[Click here to try the app](https://fake-news-detection-system-21yi.onrender.com)**
+
 ## 📌 Project Overview
 A Machine Learning web app that detects whether a news article is **Real or Fake** using NLP and Logistic Regression.
 
 ## ✨ Features
-- 98.61% Accuracy
-- AUC Score: 0.9981
-- Real-time prediction
-- Confidence score display
-- Beautiful web UI
+- ✅ 98.61% Accuracy
+- ✅ AUC Score: 0.9981
+- ✅ Real-time prediction
+- ✅ Confidence score display
+- ✅ Beautiful web UI
 
 ## 🛠️ Tech Stack
 - Python | Scikit-learn | NLTK
@@ -45,8 +53,8 @@ A Machine Learning web app that detects whether a news article is **Real or Fake
 
 ## 🚀 Installation
 ```bash
-git clone https://github.com/yashaswinicd/fake-news-detection.git
-cd fake-news-detection
+git clone https://github.com/yashaswinicd/fake-news-detection-system.git
+cd fake-news-detection-system
 pip install -r requirements.txt
 python train.py
 python app.py
