@@ -43,11 +43,7 @@
 
 ## 🌐 Live Demo
 👉 **[Click here to try the app](https://fake-news-detection-system-21yi.onrender.com)**
-
-## 🎬 Demo
-
-
-![Demo](screenshots/demo.gif)
+📄 **[Project Page](https://yashaswinicd.github.io/fake-news-detection-system)**
 
 ## 🎬 Demo
 🎥 **[Watch Demo on YouTube](https://youtu.be/Ci_ZUK16QH0)**
@@ -55,6 +51,8 @@
 
 
 ![Demo](screenshots/demo.gif)
+
+
 
 ## 📌 Project Overview
 A Machine Learning web app that detects whether a news article is **Real or Fake** using NLP and Logistic Regression.
