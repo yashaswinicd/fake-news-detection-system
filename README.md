@@ -250,6 +250,26 @@ fake-news-detection-system/
 
 ---
 
+## 🗺️ Roadmap
+
+### ✅ Completed
+- [x] Logistic Regression model — 98.61% accuracy
+- [x] Flask web app with confidence score
+- [x] Deployed on Render
+- [x] GitHub Pages project site
+- [x] CI/CD with GitHub Actions
+- [x] REST API endpoint
+- [x] Docker support
+- [x] Demo GIF + YouTube video
+
+### 🔮 Upcoming
+- [ ] BERT/RoBERTa model for better accuracy
+- [ ] Multilingual support (Hindi, Kannada)
+- [ ] Explainable AI using SHAP/LIME
+- [ ] Mobile app integration
+- [ ] Browser extension
+
+---
 ## 💻 System Requirements
 - Python 3.8+ | RAM: 4GB minimum
 - OS: Windows / Linux / macOS
