@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+app.log
+notebooks/
+screenshots/
