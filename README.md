@@ -181,3 +181,48 @@ fake-news-detection-system/
 
 ## 👩‍💻 Built By
 **Yashaswini C D** | CSE Student | Aspiring AI/ML Engineer
+
+---
+
+## ❓ FAQ
+
+**Q: What types of news can this detect?**  
+A: English language news articles and headlines.
+
+**Q: How accurate is the model?**  
+A: 98.61% accuracy on the test dataset with AUC score of 0.9981.
+
+**Q: Can I use my own dataset?**  
+A: Yes! Replace the CSV files in `data/raw/` and retrain using `train.py`.
+
+**Q: Does it work on Kannada or Hindi news?**  
+A: Currently English only. Multilingual support is a planned future improvement.
+
+**Q: Why is the app slow to load sometimes?**  
+A: Free Render hosting has a ~50 second cold start delay when inactive.
+
+---
+
+## 📚 References
+
+- [Kaggle - Fake and Real News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/)
+- [Flask Documentation](https://flask.palletsprojects.com/)
+- [NLTK Documentation](https://www.nltk.org/)
+- [TF-IDF - Wikipedia](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
+
+---
+
+## 🙏 Acknowledgements
+
+- Dataset by **Clément Bisaillon** on Kaggle
+- Built as part of **BE CSE Project** at Akshaya Institute of Technology, Tumakuru
+- Thanks to the open-source community for Python, Flask, and Scikit-learn
+
+---
+
+## 📋 Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| v1.0.0 | June 2026 | Initial release — 98.61% accuracy, Flask web app, CI/CD pipeline |
