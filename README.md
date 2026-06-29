@@ -71,6 +71,8 @@ A Machine Learning web app that detects whether a news article is **Real or Fake
 - ✅ Real-time prediction
 - ✅ Confidence score display
 - ✅ Beautiful web UI
+- ✅ REST API endpoint (`/api/predict`)
+- ✅ Docker support
 
 ## 💻 System Requirements
 - Python 3.8+
@@ -79,6 +81,7 @@ A Machine Learning web app that detects whether a news article is **Real or Fake
 - Browser: Chrome / Firefox / Edge
 
 ## 🏗️ Architecture
+
 
 
 ![Architecture](screenshots/architecture.png)
@@ -126,12 +129,40 @@ A Machine Learning web app that detects whether a news article is **Real or Fake
 - Total: 44,898 articles
 
 ## 🚀 Installation
+
 ```bash
 git clone https://github.com/yashaswinicd/fake-news-detection-system.git
 cd fake-news-detection-system
 pip install -r requirements.txt
 python train.py
 python app.py
+```
+
+## 🐳 Docker Support
+
+```bash
+docker build -t fake-news-detection .
+docker run -p 5000:5000 fake-news-detection
+```
+
+Then visit: `http://localhost:5000`
+
+## 🔌 REST API
+
+```bash
+curl -X POST http://localhost:5000/api/predict \
+  -H "Content-Type: application/json" \
+  -d "{\"text\": \"Your news article here\"}"
+```
+
+Response:
+
+```json
+{
+  "result": "FAKE NEWS",
+  "confidence": "93.27%",
+  "emoji": "🚨"
+}
 ```
 
 ## 📊 Model Results
@@ -154,8 +185,9 @@ python app.py
 
 ```
 fake-news-detection-system/
-├── data/
-│   └── raw/
+├── .github/workflows/
+│   └── test.yml
+├── data/raw/
 ├── models/
 │   ├── fake_news_model.pkl
 │   └── vectorizer.pkl
@@ -164,10 +196,12 @@ fake-news-detection-system/
 ├── static/
 ├── templates/
 ├── tests/
+│   └── test_prediction.py
 ├── utils/
 ├── app.py
 ├── train.py
 ├── predict.py
+├── Dockerfile
 └── requirements.txt
 ```
 
@@ -175,8 +209,6 @@ fake-news-detection-system/
 - 🤖 BERT/RoBERTa model for better accuracy
 - 🌐 Multilingual support (Hindi, Kannada)
 - 🔍 Explainable AI using SHAP/LIME
-- 🚀 REST API for mobile apps
-- 🐳 Docker deployment
 - 📱 Mobile app integration
 
 ## 👩‍💻 Built By
@@ -186,19 +218,19 @@ fake-news-detection-system/
 
 ## ❓ FAQ
 
-**Q: What types of news can this detect?**  
+**Q: What types of news can this detect?**
 A: English language news articles and headlines.
 
-**Q: How accurate is the model?**  
+**Q: How accurate is the model?**
 A: 98.61% accuracy on the test dataset with AUC score of 0.9981.
 
-**Q: Can I use my own dataset?**  
+**Q: Can I use my own dataset?**
 A: Yes! Replace the CSV files in `data/raw/` and retrain using `train.py`.
 
-**Q: Does it work on Kannada or Hindi news?**  
+**Q: Does it work on Kannada or Hindi news?**
 A: Currently English only. Multilingual support is a planned future improvement.
 
-**Q: Why is the app slow to load sometimes?**  
+**Q: Why is the app slow to load sometimes?**
 A: Free Render hosting has a ~50 second cold start delay when inactive.
 
 ---
@@ -225,4 +257,4 @@ A: Free Render hosting has a ~50 second cold start delay when inactive.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| v1.0.0 | June 2026 | Initial release — 98.61% accuracy, Flask web app, CI/CD pipeline |
+| v1.0.0 | June 2026 | Initial release — 98.61% accuracy, Flask web app, CI/CD, REST API, Docker |
